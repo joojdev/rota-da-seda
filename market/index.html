@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💊 Rota da Seda</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../font.css">
+</head>
+<body>
+  <nav>
+    <a href="./index.html"><img class="logo" src="../images/banner.png" height="60" alt="Banner do Rota da Seda"></a>
+    <ul class="options">
+      <li><a href="./index.html">Início</a></li>
+      <li><a href="./catalog/index.html">Catálogo</a></li>
+      <li><a href="./cart/index.html">Carrinho</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <div class="textContainer">
+      <h1>Seja bem-vindo à Rota da Seda!</h1>
+      <p>Compre seus <em>docinhos especiais</em> com anonimidade e segurança aqui.</p>
+      <button id="scrollButton">Saiba mais</button>
+    </div>
+  </div>
+  <div class="center">
+    <div id="container">
+      <h2>Por quê usar nossa plataforma?</h2>
+
+      <ul class="cardList">
+        <li class="card">
+          <div class="image">
+            <img src="../images/anonymous.png" width="100" alt="Homem com sobretudo, óculos e chapéu">
+          </div>
+          <div class="content">
+            <h2>Anonimato</h2>
+            <p>Toda operação é <b>criptografada</b> de ponta a ponta de modo que <b>não</b> sabemos quem você é, e o mais importante, <b>nem o governo</b>.</p>
+            <a href="./catalog/index.html"><button class="button">Ver catálogo</button></a>
+          </div>
+        </li>
+        <li class="card">
+          <div class="image">
+            <img src="../images/quality.png" width="100" alt="Símbolo de qualidade">
+          </div>
+          <div class="content">
+            <h2>Qualidade</h2>
+            <p>Todos nossos produtos são comprados com fornecedores <b>confiáveis</b> e <b>honestos</b> para que você se <b>satisfaça</b> e encha nossos bolsos de dinheiro.</p>
+            <a href="./catalog/index.html"><button class="button">Ver catálogo</button></a>
+          </div>
+        </li>
+        <li class="card">
+          <div class="image">
+            <img src="../images/rocket.png" width="100" alt="Foguete voando">
+          </div>
+          <div class="content">
+            <h2>Velocidade</h2>
+            <p>Temos contatos em <b>todo</b> o mundo para que seu produto chegue o <b>mais rápido possível</b> com o <b>mínimo</b> de espera e <b>máximo</b> de proveito.</p>
+            <a href="./catalog/index.html"><button class="button">Ver catálogo</button></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="banner"></div>
+    <div class="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./catalog/index.html">Catálogo</a></li>
+        <li><a href="./cart/index.html">Carrinho</a></li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h2>Contato e Endereço</h2>
+      <ul>
+        <li>Você não é nem doido.</li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    scrollButton = document.querySelector('#scrollButton')
+
+    scrollButton.addEventListener('click', () => {
+      const offset = document.querySelector('#container').getBoundingClientRect().top + window.pageYOffset - 100
+
+      window.scrollTo({ top: offset, behavior: 'smooth' })
+    })
+  </script>
+</body>
+</html>
