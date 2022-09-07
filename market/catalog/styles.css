@@ -25,6 +25,11 @@ nav {
   z-index: 999;
   width: 100%;
   top: 0;
+  flex-wrap: wrap;
+}
+
+nav > * {
+  margin: auto;
 }
 
 .logo {
@@ -153,10 +158,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 10px;
-  gap: 5px;
-  height: 350px;
+  height: 370px;
+}
+
+.hidden {
+  width: 250px;
 }
 
 .image {
@@ -166,6 +174,10 @@ footer {
   background-size: cover;
   border-radius: 5px;
   transition: .3s box-shadow;
+}
+
+.stretch {
+  background-size: 100% 100%;
 }
 
 .item > p, .item > button {
